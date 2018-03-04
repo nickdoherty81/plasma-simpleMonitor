@@ -32,7 +32,7 @@
             <label>Distribution logo</label>
             <choices>
                 <choice name="Default"/>
-                <choice name="Tux"/>
+                <choice name="Dirty"/>
                 <choice name="Slackware"/>
                 <choice name="Ubuntu"/>
                 <choice name="Kubuntu"/>

@@ -50,7 +50,7 @@ ColumnLayout {
     Text {
         id: dayName
         text: i18n("mie")
-        font.pointSize: 14
+        font.pointSize: 16
         color: "white"
         font.capitalization: Font.AllLowercase
         Layout.bottomMargin: -20
@@ -65,7 +65,7 @@ ColumnLayout {
             text: "25"
             font {
                 family: michroma.name
-                pointSize: 40
+                pointSize: 25
             }
             color: "#999"
         }
@@ -75,7 +75,7 @@ ColumnLayout {
             text: i18n("dic")
             font {
                 family: playBold.name
-                capitalization: Font.AllUppercase
+                capitalization: Font.AllLowercase
                 pointSize: 16
             }
             color: "white"

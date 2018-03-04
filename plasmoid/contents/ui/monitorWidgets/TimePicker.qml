@@ -56,7 +56,7 @@ Item {
             family: playRegular.name
             pointSize: 30
         }
-        color: "white"
+        color: "#a30303"
     }
     Text {
         id: mins
@@ -66,9 +66,9 @@ Item {
         text: "00:"
         font {
             family: playRegular.name
-            pointSize: 20
+            pointSize: 30
         }
-        color: "#cdde87"
+        color: "#a30303"
     }
     Text {
         id: secs
@@ -78,8 +78,8 @@ Item {
         text: "00"
         font {
             family: playRegular.name
-            pointSize: 15
+            pointSize: 30
         }
-        color: "#ebff9d"
+        color: "#a30303"
     }
 }

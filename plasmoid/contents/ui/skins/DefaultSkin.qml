@@ -104,8 +104,9 @@ BaseSkin {
                 kernelName: root.kernelName
                 kernelVersion: root.kernelVersion
 
-                Layout.alignment: Qt.AlignHCenter | Qt.AlignTop
+                Layout.alignment: Qt.AlignLeft | Qt.AlignTop
                 Layout.topMargin: 2
+                Layout.leftMargin: 2
                 Layout.minimumHeight: implicitHeight
                 Layout.maximumHeight: implicitHeight
                 Layout.minimumWidth: implicitWidth
