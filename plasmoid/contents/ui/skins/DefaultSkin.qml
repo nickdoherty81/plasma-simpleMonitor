@@ -47,9 +47,10 @@ BaseSkin {
             Layout.columnSpan: 4
             Layout.alignment: Qt.AlignLeft
             Layout.leftMargin: 10
-            Layout.minimumWidth: implicitWidth
             Layout.minimumHeight: implicitHeight
             Layout.maximumHeight: implicitHeight
+            Layout.preferredWidth: implicitWidth
+            Layout.preferredHeight: implicitHeight
         }
 
         ColumnLayout {

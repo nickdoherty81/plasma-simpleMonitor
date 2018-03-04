@@ -49,36 +49,33 @@ Item {
     Text {
         id: hour
         anchors.left: parent.left
-        anchors.bottom: parent.bottom
-        height: 44
+        height: 40
         text: "00:"
         font {
             family: playRegular.name
-            pointSize: 30
+            pointSize: 35
         }
         color: "#a30303"
     }
     Text {
         id: mins
         anchors.left: hour.right
-        anchors.bottom: parent.bottom
-        height: 29
+        height: 40
         text: "00:"
         font {
             family: playRegular.name
-            pointSize: 30
+            pointSize: 35
         }
         color: "#a30303"
     }
     Text {
         id: secs
         anchors.left: mins.right
-        anchors.bottom: parent.bottom
-        height: 21
+        height: 40
         text: "00"
         font {
             family: playRegular.name
-            pointSize: 30
+            pointSize: 35
         }
         color: "#a30303"
     }

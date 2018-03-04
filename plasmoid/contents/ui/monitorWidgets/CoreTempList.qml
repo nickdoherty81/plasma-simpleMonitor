@@ -49,7 +49,7 @@ ListView {
             text: i18n('Core %1:', model.index)
             font.bold: true
             font { family: doppioOneRegular.name; pointSize: 10 }
-            color: "#ffdd55"
+            color: "white"
         }
         Text {
             id: unitLabel
@@ -66,8 +66,8 @@ ListView {
             height: 9
             width: Math.floor(val/coreTempList.criticalTemp*parent.width)
             color: if (val >= coreTempList.criticalTemp) "red"
-                   else if (val >= coreTempList.highTemp) "#ffac2a"
-                   else "#85a9ff"
+                   else if (val >= coreTempList.highTemp) "#ff8800"
+                   else "#0132a8"
             anchors.top: coreLabel.bottom
             anchors.right: parent.right
             anchors.topMargin: 1

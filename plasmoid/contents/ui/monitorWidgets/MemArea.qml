@@ -48,7 +48,7 @@ Item {
                 id: memType
                 text: i18n("Mem:")
                 font { family: doppioOneRegular.name; pointSize: 12 }
-                color: "#ffdd55"
+                color: "white"
             }
             Text {
                 text: i18n("%1 GiB", memTotal.toFixed(2))
@@ -89,7 +89,7 @@ Item {
             id: rectTotalMemory
             height: 5
             Layout.fillWidth: true
-            color: "#7ec264"
+            color: "#10a500"
             Rectangle {
                 id: rectUsedMemory
                 anchors.left: parent.left

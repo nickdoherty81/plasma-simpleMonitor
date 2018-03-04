@@ -18,21 +18,21 @@
  **/
 
 import QtQuick 2.0
-import QtQuick.Layouts 1.1
 
-ColumnLayout {
-    id: datePicker
+Item {
+    id: timePicker
 
-    spacing: 0
+    LayoutMirroring.enabled: false
+    LayoutMirroring.childrenInherit: true
 
-    FontLoader{
-        id: michroma
-        source: "../../fonts/Michroma/Michroma.ttf"
-    }
+    implicitWidth: monthName.x + monthName.width
+    implicitHeight: dayNumber.implicitHeight - 11
+
     FontLoader {
-        id: playBold
-        source: "../../fonts/Play/Play-Bold.ttf"
+        id: playRegular
+        source: "../../fonts/Play/Play-Regular.ttf"
     }
+
 
     Timer {
         interval: 1000
@@ -49,36 +49,39 @@ ColumnLayout {
     
     Text {
         id: dayName
-        text: i18n("mie")
-        font.pointSize: 16
-        color: "white"
+        anchors.left: parent.left
+        anchors.bottom: parent.bottom
+        height: 40
+        text: "00:"
+        font {
+            family: playRegular.name
+            pointSize: 30
+        }
         font.capitalization: Font.AllLowercase
-        Layout.bottomMargin: -20
+        color: "#a30303"
     }
-
-    Row {
-        id: rowMounth
-
-        Text {
-            id: dayNumber
-//            height: 65
-            text: "25"
-            font {
-                family: michroma.name
-                pointSize: 25
-            }
-            color: "#999"
+    Text {
+        id: dayNumber
+        anchors.left: dayName.right
+        height: 40
+        text: "00:"
+        font {
+            family: playRegular.name
+            pointSize: 50
         }
-        Text {
-            id: monthName
-            anchors.bottom: parent.bottom
-            text: i18n("dic")
-            font {
-                family: playBold.name
-                capitalization: Font.AllLowercase
-                pointSize: 16
-            }
-            color: "white"
+        color: "white"
+    }
+    Text {
+        id: monthName
+        anchors.left: dayNumber.right
+        anchors.bottom: parent.bottom
+        height: 40
+        text: "00"
+        font {
+            family: playRegular.name
+            pointSize: 30
         }
+        font.capitalization: Font.AllLowercase
+        color: "#a30303"
     }
 }

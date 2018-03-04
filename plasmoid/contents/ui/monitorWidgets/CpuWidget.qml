@@ -58,7 +58,7 @@ ListView {
                     text: i18n('CPU %1:', model.index)
                     font.bold: true
                     font { family: doppioOneRegular.name; pointSize: 10 }
-                    color: "#ffdd55"
+                    color: "white"
                 }
                 Text {
                     text: Math.floor(val)+'%'
