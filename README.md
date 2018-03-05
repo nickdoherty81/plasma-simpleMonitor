@@ -45,7 +45,7 @@ For upgrade, run `plasmapkg2 -u plasma-simpleMonitor-0.6.plasmoid` instead.
 
 Installing from sources:
 ````Shell
-git clone https://github.com/dhabyx/plasma-simpleMonitor.git plasma-simpleMonitor
+git clone https://github.com/nickdoherty81/plasma-simpleMonitor.git -b dirty plasma-simpleMonitor
 cd plasma-simpleMonitor/plasmoid
 plasmapkg2 -t plasmoid -i ./plasmoid
 ````
@@ -57,7 +57,7 @@ Packaging
 Simple way for make plasmoid package:
 
 ````Shell
-git clone https://github.com/dhabyx/plasma-simpleMonitor.git plasma-simpleMonitor
+git clone https://github.com/nickdoherty81/plasma-simpleMonitor.git -b dirty plasma-simpleMonitor
 cd plasma-simpleMonitor/plasmoid
 zip -r plasma-simpleMonitor.plasmoid contents metadata.desktop
 ````
