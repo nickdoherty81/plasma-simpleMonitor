@@ -35,7 +35,7 @@ Row {
 
     Text {
         text: i18n("Uptime:")
-        color: "#b3b3b3"
+        color: "white"
     }
 
     Text {

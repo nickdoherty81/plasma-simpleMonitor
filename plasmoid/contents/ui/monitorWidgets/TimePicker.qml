@@ -55,7 +55,7 @@ Item {
             family: playRegular.name
             pointSize: 35
         }
-        color: "#a30303"
+        color: "white"
     }
     Text {
         id: mins
